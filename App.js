@@ -1,26 +1,11 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
+import Listitem from './components/Listitem';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.itemContainer}>
-        <View style={styles.leftContainer}>
-          <Image
-            style={{width: 100, height: 100}}
-            source={{
-              uri: 'https://reactnative.dev/img/tiny_logo.png',
-            }}
-          />
-        </View>
-        <View style={styles.rightContainer}>
-          <Text style={styles.text} numberOfLines={3}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore
-          </Text>
-          <Text style={styles.subtext}>ReactNews</Text>
-        </View>
-      </View>
+      <Listitem />
     </View>
   );
 }
